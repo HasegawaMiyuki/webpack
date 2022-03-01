@@ -1,0 +1,18 @@
+
+// 基準となるビューポート
+$viewport: 1200;
+$viewport-sp: 768;
+
+
+@function pxtovw($num, $width: $viewport) {
+   @return (1vw * $num / $width * 100);
+}
+@function pxtovw-sp($num, $width: $viewport-sp) {
+   @return (1vw * $num / $width * 100);
+}
+@function pxtoper($num, $width: $viewport){
+   @return ($num / $width * 100%);
+}
+@function pxtoper-sp($num, $width: $viewport-sp){
+   @return ($num / $width * 100%);
+}

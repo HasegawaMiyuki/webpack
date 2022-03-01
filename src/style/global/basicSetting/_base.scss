@@ -1,0 +1,17 @@
+* {
+	float: none;
+	position: static;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+  vertical-align:top;
+}
+
+body{
+  // background-color: red;
+  @include mq(sp){
+    background-color: blue;
+  }
+}
